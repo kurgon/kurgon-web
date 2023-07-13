@@ -80,7 +80,8 @@
         }
         a.active,
         a:hover {
-          background-color: #d8dee950;
+          // background-color: #d8dee950;
+          background-color: #00001090;
         }
         a.active {
           text-decoration: none;
