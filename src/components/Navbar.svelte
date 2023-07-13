@@ -48,14 +48,16 @@
       font-size: 1.25rem;
       a[title="Kurgon"] {
         margin-right: auto;
-        background-image: url("../assets/kurgon-pfp.png");
-        background-size: 100%;
+        background-image: url("../assets/Valknut.svg");
+        background-size: 75%;
+        background-position: center center;
+        background-repeat: no-repeat;
         border-radius: 50%;
         height: 100%;
         aspect-ratio: 1/1;
       }
       a[title="Kurgon"].active {
-        outline: solid 2px #edeff4cc;
+        // outline: solid 2px #edeff4cc;
       }
       a {
         height: 100%;
