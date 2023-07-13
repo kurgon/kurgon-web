@@ -8,6 +8,7 @@
 
   NProgress.configure({
     minimum: 0.16,
+    trickle: true,
   });
 
   $: {
