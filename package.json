@@ -30,6 +30,8 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@types/nprogress": "^0.2.0",
+		"nprogress": "^0.2.0",
 		"sass": "^1.63.6"
 	}
 }
