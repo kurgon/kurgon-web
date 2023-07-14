@@ -5,6 +5,7 @@
   import "../nprogress.scss";
   import NProgress from "nprogress";
   import { navigating } from "$app/stores";
+  import Background from "../components/Background.svelte";
 
   NProgress.configure({
     minimum: 0.16,
@@ -18,6 +19,7 @@
   }
 </script>
 
+<Background />
 <Navbar />
 <slot />
 
