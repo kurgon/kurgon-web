@@ -75,7 +75,7 @@
       gap: 1rem;
       width: 100%;
       height: 5rem;
-      padding: 1rem;
+      padding-block: 1rem;
       a {
         color: inherit;
       }
