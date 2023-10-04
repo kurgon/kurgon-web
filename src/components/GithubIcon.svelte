@@ -1,7 +1,7 @@
 <svg
   viewBox="0 0 24 24"
   xmlns="http://www.w3.org/2000/svg"
-  style="height: 5rem; margin: auto"
+  style="height: 4.5rem; margin: auto"
 >
   <path
     fill-rule="evenodd"
