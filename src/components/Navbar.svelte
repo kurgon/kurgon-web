@@ -14,8 +14,8 @@
       >
     </li>
     <li>
-      <a class:active={$page.url.pathname.startsWith("/Work")} href="/Work/"
-        >Work</a
+      <a class:active={$page.url.pathname.startsWith("/About")} href="/About/"
+        >About</a
       >
     </li>
     <li>
@@ -46,10 +46,14 @@
       margin: 1rem;
       padding: 0;
       font-size: 1.25rem;
+      transition: outline 0.2s;
+      outline: solid 2px var(--border-col);
       a[title="Kurgon"] {
+        margin: 0;
+        padding: 0;
         margin-right: auto;
-        background-image: url("../assets/Valknut.svg");
-        background-size: 75%;
+        background-image: url("../assets/Yggdrasil.svg");
+        background-size: 110%;
         background-position: center center;
         background-repeat: no-repeat;
         border-radius: 50%;
@@ -57,7 +61,7 @@
         aspect-ratio: 1/1;
       }
       a[title="Kurgon"].active {
-        // outline: solid 2px #edeff4cc;
+        --border-col: #edeff4cc;
       }
       a {
         height: 100%;
