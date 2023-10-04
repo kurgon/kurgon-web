@@ -1,7 +1,17 @@
+<script>
+  import GithubIcon from "../components/GithubIcon.svelte";
+</script>
+
 <main>
-  <h1>Welcome to Kurgon.<span title="I don't have a domain name">XXX</span></h1>
-  <h2>Programmer ∙ Cybersecurity enthusiast ∙ Open source</h2>
+  <header>
+    Welcome to 
+    <a class="repo" href="//github.com/kurgon/web" target="_blank">
+      <GithubIcon />
+      kurgon/web
+    </a>
+  </header>
   <hr />
+  <h2>Programmer ∙ Cybersecurity enthusiast ∙ Open source</h2>
   <div class="Socials">
     <a href="//github.com/kurgon" target="_blank">
       <svg
@@ -54,17 +64,40 @@
     align-items: flex-start;
     justify-content: flex-end;
     padding: 2rem;
+    header {
+      display: flex;
+      flex-direction: row;
+      font-size: 5.5rem;
+      font-family: "Inter", sans-serif;
+      font-weight: 800;
+      width: 100%;
+      a.repo {
+        display: flex;
+        flex-direction: row;
+        text-decoration: inherit;
+        color: inherit;
+        margin: 0;
+        border-radius: 15px;
+        background-color: #ffffff20;
+        transition: background 0.1s;
+        gap: 1rem;
+        padding-inline: 1rem;
+        svg {
+          height: 5rem;
+          margin: auto;
+          //background-image: url("../assets/github.svg");
+          //background-size: 60%;
+          // background-position: center center;
+          //  background-repeat: no-repeat;
+        }
+      }
+      a.repo:hover {
+        background-color: #ffffff30;
+      }
+    }
     hr {
       width: 100%;
-    }
-    h1 {
-      // margin-top: auto;
-      color: #edeff4;
-      margin-block: 0;
-      font-size: 6rem;
-      span {
-        font-family: "LibreBarcode";
-      }
+      margin-block: 1rem;
     }
     h2 {
       font-weight: 300;
@@ -75,7 +108,6 @@
       gap: 1rem;
       width: 100%;
       height: 5rem;
-      padding-block: 1rem;
       a {
         color: inherit;
       }
